@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-ENV TZ=Asia/Seoul VERSION=1.0.0 NICK=unicom31
+ENV TZ=Asia/Seoul VERSION=2.0.0 NICK=unicom31
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
     sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list && \
     sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list && \
